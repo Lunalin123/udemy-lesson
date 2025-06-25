@@ -1,0 +1,62 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            /* 使用情境:樣式加不上去
+            1.語法錯誤
+            2.選擇元素錯誤
+            3.權重不夠
+            */
+
+            /* 權重規則: 標籤權重1,class權重10,Id權重100
+                權重表達方式:0000
+                類型選擇符:0001
+                class選擇符:0010
+                ID選擇符:0100
+                偽類選擇符:0010
+                包含選擇符:權重之和
+
+                內聯樣式:1000
+                集成樣式:0000
+
+            */
+            div{
+                width: 100px;height: 100px;background-color: red;
+            }
+            .view{
+                background-color: aqua;
+            }
+
+            #head{
+                background-color: blueviolet;
+            }
+            /* 0010 */
+            .title{
+                color: white;
+            }
+            /* 0010+0010 */
+            .view1 .title{
+                color: aquamarine;
+            }
+            /* 0001+0010 */
+            div .title{
+                color: aqua;
+            }
+
+        </style>
+        
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 權重問題: -->
+        <div class="view" id="head">
+        </div>
+
+        <div class="view1">
+            <p class="title">html</p>
+
+
+        </div>
+    </body>
+    </html>

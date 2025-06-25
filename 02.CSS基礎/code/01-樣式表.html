@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<!-- 2.內聯樣式表 -->
+		<style>
+			/* CSS的注釋方式 */
+			/* 書寫樣式中，空格或換行都不會影響 */
+			/* div{
+				width: 100px; 
+				height: 100px; 
+				background: pink; } */
+			
+			/* 3.外部樣式表(導入外部樣式一) →寫在style裡 */
+			/* @import url("01-styles.css"); */
+			
+		</style>
+		<!-- 3.外部樣式表(導入外部樣式二)→寫在Head裡 -->
+		<link rel="stylesheet" href="01-styles.css"/>
+		
+	</head>
+	<body>
+		<!-- 內部樣式表、內聯樣式表(寫在Head)、外部樣式表-->
+		
+		<!-- 1.內部樣式表 -->
+		<!-- <div style="width: 100px; height: 100px; background: black;"></div> -->
+		
+		<!-- 2.內部樣式表 -->
+		<!-- <div></div> -->
+		
+		<!-- 3.外部樣式表 -->
+		<!-- 
+		@import/link標籤區別
+		 1.加載區別(@import只能加載CSS)
+		 2.加載順序(@improt先載→CSS、Link同時加載)
+		 3.兼容性(@import 只支援IE5以上)
+		 4.DOM操作(只能用link，不支援@import)
+		 -->
+		<div></div>
+		
+	</body>
+</html>

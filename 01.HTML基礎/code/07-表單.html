@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 表單域form
+		      name:表單名稱
+			  method:請求方式get/post
+			  action:提交URL
+		-->
+		<form name="test" method="get" action="https://www.google.com.tw/?hl=zh_TW">
+			<!-- 1.文本域
+			       type:類型text
+				   Placeholder:提示文本
+				   value:輸入框內容-->
+				   
+		    <p>
+				帳號: <input type="text" placeholder="手機號/生日" value="123456"/>
+			</p>
+			<!-- 2.密碼輸入框
+			       type:類型 password
+			       Placeholder:提示文本
+			       value:輸入框內容
+			       -->
+			<p>
+				密碼: <input type="password" placeholder="六位數密碼" />
+			</p>
+			<!-- 3.單選框(同一組只能選擇一個) radio
+			       name:控制哪一組
+				   checked:默認選項
+			       -->
+			<p>
+				<input type="radio" name="sex"/>男
+				<input type="radio" name="sex" checked/>女
+				<input type="radio" name="sex"/>第三性
+			</p>
+			<!-- 4.複選框checkbox
+			    name:控制哪一組
+			    checked:默認選項
+			 -->
+			 <p>
+				 興趣: <input type="checkbox" name="like"/>吃飯
+				       <input type="checkbox" name="like" checked="checked"/>睡覺
+					   <input type="checkbox" name="like"/>打東東
+			 </p>
+			 <!--5.下拉選單
+			     -->
+				 居住地：
+				 <select>
+					 <option>台北</option>
+					 <option>台中</option>
+					 <option>台南</option>
+				 </select>
+			<!-- 6.按鈕 button 
+			     value:顯示
+				 -->
+				 <p>
+					 <input type="button" value="按鈕1"/>
+					 <input type="button" value="按鈕2"/>
+				 </p>
+			<!-- 7.提交按鈕 submit
+			      提交到表單域填寫的action地址 -->
+			<p>
+				<input type="submit" value="提交"/>
+			</p>
+			<!-- 8.重置按鈕 reset
+			       重置該按鈕對應的表單所有問題-->
+				   <p>
+					   <input type="reset" value="重置"/>
+				   </p>
+		</form>
+	</body>
+</html>

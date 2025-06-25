@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<style>
+			/* 1.類型選擇符
+				語法：元素名稱(ex:h1){}
+			*/
+			/* 所有的P標籤樣式 */
+			p{color: blue;}
+			
+			h1{
+				color: red;
+			}
+
+			/* 2.類型選擇符(class選擇器) 【類似於名字是可以重複】
+				語法：.class名稱{}
+			*/
+			.張三{color:yellow}
+			.李四{color: pink;}
+
+			/* 3.ID選擇符(ID選擇器)
+				語法：#ID名稱{}
+				注意：ID名稱不能重複，類似於身份證號碼
+			*/
+			#View1{ width: 100px; height: 100px; background-color: red;}
+			#View2{ width: 100px; height: 100px; background-color: blue;}
+
+		</style>
+
+	</head>
+	<body>
+		<!-- 舉例：
+			所有學生明天穿校服
+			
+			張三明天不用穿校服
+			李四明天不用穿校服
+		
+		-->
+
+
+		<p>Hello</p>
+		<p>World</p>
+
+
+		<!--2. 起別名：Class -->
+		<!-- 黃色 -->
+		<h1 class="張三">HTML基礎</h1>
+
+		<!-- 粉色 -->
+		<h1 class="李四">CSS基礎</h1>
+		<h1 class="張三">Javascript基礎</h1>
+
+		<!-- 紅色 -->
+		<div id="View1"></div>
+
+		<!-- 藍色 -->
+		<div id="View2"></div>
+
+	</body>
+</html>
